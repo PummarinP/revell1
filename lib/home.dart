@@ -49,9 +49,9 @@ class _HomeState extends State<Home> {
           ],
         ),
        bottomNavigationBar: BottomAppBar(
+        color: Colors.red[200],
         child: Row(
           children: [
-            
             IconButton(
                 icon: Icon(Icons.home),
                 onPressed: () {
@@ -59,22 +59,23 @@ class _HomeState extends State<Home> {
                 }),
             Spacer(),
             IconButton(
-                icon: Icon(Icons.settings),
+                icon: Icon(Icons.filter_center_focus),
                 onPressed: () {
                   Navigator.of(context).pushNamed(Scan.tag);
                 }),
             Spacer(),
             IconButton(
-                icon: Icon(Icons.settings),
+                icon: Icon(Icons.notifications),
                 onPressed: () {
                   Navigator.of(context).pushNamed(Noti.tag);
                 }),
             Spacer(),
             IconButton(
-                icon: Icon(Icons.settings),
+                icon: Icon(Icons.person_outline),
                 onPressed: () {
                   Navigator.of(context).pushNamed(Profile.tag);
                 }),
+
 
           ],
         ),

@@ -81,9 +81,9 @@ class _ProfileState extends State<Profile> {
                                       height: 80,
                                     ),
                                     Text(
-                                      'Praewploy ',
+                                      'Jennie Kim ',
                                       style: TextStyle(
-                                        color: Colors.lightGreen[300],
+                                        color: Colors.red[200],
                                         fontFamily: 'Nunito',
                                         fontSize: 37,
                                       ),
@@ -108,7 +108,7 @@ class _ProfileState extends State<Profile> {
                                             Text(
                                               '4',
                                               style: TextStyle(
-                                                 color: Colors.lightGreen[300],
+                                                 color: Colors.red[200],
                                                 fontFamily: 'Nunito',
                                                 fontSize: 25,
                                               ),
@@ -172,7 +172,7 @@ class _ProfileState extends State<Profile> {
                               child: Center(
                                 child: Container(
                                   child: Image.asset(
-                                    'assets/user2.png', 
+                                    'assets/images/Jennie.png', 
                                     width: innerWidth * 0.35,
                                     fit: BoxFit.fitWidth,
                                   ),
@@ -247,9 +247,9 @@ class _ProfileState extends State<Profile> {
                             ),
                           ),
                           Text(
-                            'Lightstick (Pending)',
+                            'Lightstick',
                             style: TextStyle(
-                              color: Colors.grey,
+                              color: Colors.red[200],
                               fontSize: 27,
                               fontFamily: 'Nunito',
                             ),
@@ -263,29 +263,37 @@ class _ProfileState extends State<Profile> {
             ),
           ),
             bottomNavigationBar: BottomAppBar(
+        color: Colors.red[200],
         child: Row(
           children: [
-            IconButton(icon: Icon(Icons.home), onPressed: () 
-            { Navigator.of(context).pushNamed(Home.tag);}
-            ),
+            IconButton(
+                icon: Icon(Icons.home),
+                onPressed: () {
+                  Navigator.of(context).pushNamed(Home.tag);
+                }),
             Spacer(),
-            IconButton(icon: Icon(Icons.stars), onPressed: ()
-             { Navigator.of(context).pushNamed(Rank.tag);}),
-             Spacer(),
-             IconButton(icon: Icon(Icons.star), onPressed: ()
-             { Navigator.of(context).pushNamed(Noti.tag);}),
+            IconButton(
+                icon: Icon(Icons.filter_center_focus),
+                onPressed: () {
+                  Navigator.of(context).pushNamed(Scan.tag);
+                }),
             Spacer(),
-             IconButton(icon: Icon(Icons.settings), onPressed: ()
-             { Navigator.of(context).pushNamed(Profile.tag);}),
-          
+            IconButton(
+                icon: Icon(Icons.notifications),
+                onPressed: () {
+                  Navigator.of(context).pushNamed(Noti.tag);
+                }),
+            Spacer(),
+            IconButton(
+                icon: Icon(Icons.person_outline),
+                onPressed: () {
+                  Navigator.of(context).pushNamed(Profile.tag);
+                }),
+
+
           ],
         ),
       ),
-       floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.center_focus_weak),
-          onPressed: () {Navigator.of(context).pushNamed(Scan.tag);},
-          backgroundColor: Colors.red[100]),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     )
       ],
     );

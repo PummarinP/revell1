@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Noti extends StatefulWidget {
-static String tag = 'Noti';
-
+  static String tag = 'Noti';
   @override
   _NotiState createState() => _NotiState();
 }

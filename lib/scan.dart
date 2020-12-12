@@ -68,30 +68,38 @@ class _ScanState extends State<Scan> {
           ],
         ),
       ),
-    bottomNavigationBar: BottomAppBar(
+   bottomNavigationBar: BottomAppBar(
+        color: Colors.red[200],
         child: Row(
           children: [
-            IconButton(icon: Icon(Icons.home), onPressed: () 
-            { Navigator.of(context).pushNamed(Home.tag);}
-            ),
+            IconButton(
+                icon: Icon(Icons.home),
+                onPressed: () {
+                  Navigator.of(context).pushNamed(Home.tag);
+                }),
             Spacer(),
-            IconButton(icon: Icon(Icons.stars), onPressed: ()
-             { Navigator.of(context).pushNamed(Rank.tag);}),
-             Spacer(),
-             IconButton(icon: Icon(Icons.star), onPressed: ()
-             { Navigator.of(context).pushNamed(Noti.tag);}),
+            IconButton(
+                icon: Icon(Icons.filter_center_focus),
+                onPressed: () {
+                  Navigator.of(context).pushNamed(Scan.tag);
+                }),
             Spacer(),
-             IconButton(icon: Icon(Icons.settings), onPressed: ()
-             { Navigator.of(context).pushNamed(Profile.tag);}),
-          
+            IconButton(
+                icon: Icon(Icons.notifications),
+                onPressed: () {
+                  Navigator.of(context).pushNamed(Noti.tag);
+                }),
+            Spacer(),
+            IconButton(
+                icon: Icon(Icons.person_outline),
+                onPressed: () {
+                  Navigator.of(context).pushNamed(Profile.tag);
+                }),
+
+
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.center_focus_weak),
-          onPressed: () {Navigator.of(context).pushNamed(Scan.tag);},
-          backgroundColor: Colors.red[100]),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
