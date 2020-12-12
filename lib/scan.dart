@@ -1,17 +1,17 @@
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
-import 'pjNoti.dart';
-import 'pjHome.dart';
-import 'pjRank.dart';
-import 'lib/pjAccount.dart';
+import 'Noti.dart';
+import 'Home.dart';
+import 'Rank.dart';
+import 'profile.dart';
 
-class PjScan extends StatefulWidget {
-  static String tag = 'PjScan';
+class Scan extends StatefulWidget {
+  static String tag = 'Scan';
   @override
-  _PjScanState createState() => _PjScanState();
+  _ScanState createState() => _ScanState();
 }
 
-class _PjScanState extends State<PjScan> {
+class _ScanState extends State<Scan> {
   String qrCodeResult = "Not Yet Scanned";
   @override
   Widget build(BuildContext context) {
@@ -72,24 +72,24 @@ class _PjScanState extends State<PjScan> {
         child: Row(
           children: [
             IconButton(icon: Icon(Icons.home), onPressed: () 
-            { Navigator.of(context).pushNamed(PjHome.tag);}
+            { Navigator.of(context).pushNamed(Home.tag);}
             ),
             Spacer(),
             IconButton(icon: Icon(Icons.stars), onPressed: ()
-             { Navigator.of(context).pushNamed(PjRank.tag);}),
+             { Navigator.of(context).pushNamed(Rank.tag);}),
              Spacer(),
              IconButton(icon: Icon(Icons.star), onPressed: ()
-             { Navigator.of(context).pushNamed(PjNoti.tag);}),
+             { Navigator.of(context).pushNamed(Noti.tag);}),
             Spacer(),
              IconButton(icon: Icon(Icons.settings), onPressed: ()
-             { Navigator.of(context).pushNamed(PjAccount.tag);}),
+             { Navigator.of(context).pushNamed(Profile.tag);}),
           
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.center_focus_weak),
-          onPressed: () {Navigator.of(context).pushNamed(PjScan.tag);},
+          onPressed: () {Navigator.of(context).pushNamed(Scan.tag);},
           backgroundColor: Colors.red[100]),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );

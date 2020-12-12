@@ -1,18 +1,17 @@
 
 import 'package:flutter/material.dart';
-import '../pjHome.dart';
-import '../pjNoti.dart';
-import '../pjSetting.dart';
-import '../pjScan.dart';
-import '../pjRank.dart';
+import 'Home.dart';
+import 'Noti.dart';
+import 'Scan.dart';
+import 'Rank.dart';
 
-class PjAccount extends StatefulWidget {
-  static String tag = 'PjAccount';
+class Profile extends StatefulWidget {
+  static String tag = 'Profile';
   @override
-  _PjAccountState createState() => _PjAccountState();
+  _ProfileState createState() => _ProfileState();
 }
 
-class _PjAccountState extends State<PjAccount> {
+class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -267,24 +266,24 @@ class _PjAccountState extends State<PjAccount> {
         child: Row(
           children: [
             IconButton(icon: Icon(Icons.home), onPressed: () 
-            { Navigator.of(context).pushNamed(PjHome.tag);}
+            { Navigator.of(context).pushNamed(Home.tag);}
             ),
             Spacer(),
             IconButton(icon: Icon(Icons.stars), onPressed: ()
-             { Navigator.of(context).pushNamed(PjRank.tag);}),
+             { Navigator.of(context).pushNamed(Rank.tag);}),
              Spacer(),
              IconButton(icon: Icon(Icons.star), onPressed: ()
-             { Navigator.of(context).pushNamed(PjNoti.tag);}),
+             { Navigator.of(context).pushNamed(Noti.tag);}),
             Spacer(),
              IconButton(icon: Icon(Icons.settings), onPressed: ()
-             { Navigator.of(context).pushNamed(PjAccount.tag);}),
+             { Navigator.of(context).pushNamed(Profile.tag);}),
           
           ],
         ),
       ),
        floatingActionButton: FloatingActionButton(
           child: Icon(Icons.center_focus_weak),
-          onPressed: () {Navigator.of(context).pushNamed(PjScan.tag);},
+          onPressed: () {Navigator.of(context).pushNamed(Scan.tag);},
           backgroundColor: Colors.red[100]),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     )
