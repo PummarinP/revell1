@@ -9,7 +9,8 @@ import 'scan.dart';
 import 'login.dart';
 import 'profile.dart';
 import 'category_list_view.dart';
-import 'app_theme.dart';
+// import 'app_theme.dart';
+
 
 
 
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
     Rank.tag: (context) => Rank(),
     Scan.tag: (context) => Scan(),
     CategoryListView.tag: (context) => CategoryListView(),
+   
   };
 
   @override

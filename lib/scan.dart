@@ -11,7 +11,7 @@ class Scan extends StatefulWidget {
 }
 
 class _ScanState extends State<Scan> {
-  String qrCodeResult = "Please Scan";
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,13 +26,7 @@ class _ScanState extends State<Scan> {
             height: 40,
             child: Image.asset('assets/images/Untitled_Artwork.png'),
           ),
-            Text(
-              qrCodeResult,
-              style: TextStyle(
-                fontSize: 20.0,
-              ),
-              textAlign: TextAlign.center,
-            ),
+            
             SizedBox(
               height: 20.0,
             ),
@@ -41,10 +35,7 @@ class _ScanState extends State<Scan> {
               onPressed: () async {
 
 
-                String codeSanner = await BarcodeScanner.scan();    //barcode scnner
-                setState(() {
-                  qrCodeResult = codeSanner;
-                });
+                
 
                 // try{
                 //   BarcodeScanner.scan()    this method is used to scan the QR code
@@ -56,13 +47,13 @@ class _ScanState extends State<Scan> {
 
               },
               child: Text(
-                "Open Your Camera",
+                "SCAN",
                 style:
                     TextStyle(color: Colors.red[200], fontWeight: FontWeight.bold),
               ),
               shape: RoundedRectangleBorder(
                   side: BorderSide(color: Colors.red[200], width: 3.0),
-                  borderRadius: BorderRadius.circular(20.0)),
+                  borderRadius: BorderRadius.circular(10.0)),
             )
           ],
         ),
