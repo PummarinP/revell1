@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         fontFamily: 'Nunito',
       ),
-      home: Home(),
+      home: Login(),
       routes: routes,
     ); 
   }

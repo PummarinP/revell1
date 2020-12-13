@@ -55,6 +55,16 @@ flutter:
   assets:
     - assets/images/Jennie.png
     - assets/images/vitc.png
+    - assets/images/Untitled_Artwork.png
+    - assets/images/anua.png
+    - assets/images/anua2.png
+    - assets/images/noodle.png
+    - assets/images/xm.jpg
+    - assets/images/JP1.png
+    - assets/images/Cerave.png
+    - assets/images/origin.jpg
+    - assets/images/mascara.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

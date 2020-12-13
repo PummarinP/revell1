@@ -305,23 +305,20 @@ class _HomeState extends State<Home> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.start,
+              
               children: <Widget>[
-                Text(
-                  'Revell',
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 22,
-                    letterSpacing: 0.27,
-                    color: RevellTheme.darkerText,
-                  ),
-                ),
+                Container(
+            width: 100,
+            height: 40,
+            child: Image.asset('assets/images/Untitled_Artwork.png'),
+          ),
               ],
             ),
           ),
+          
           Container(
             width: 60,
-            height: 60,
+            height: 40,
             child: Image.asset('assets/images/Jennie.png'),
           )
         ],

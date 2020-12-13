@@ -133,7 +133,7 @@ class _ProfileState extends State<Profile> {
                                         Column(
                                           children: [
                                             Text(
-                                              'Pending',
+                                              'Favorite',
                                               style: TextStyle(
                                                 color: Colors.grey[700],
                                                 fontFamily: 'Nunito',
@@ -212,14 +212,7 @@ class _ProfileState extends State<Profile> {
                           Divider(
                             thickness: 2.5,
                           ),
-                        Text(
-                            'Oichi',
-                            style: TextStyle(
-                              color: Colors.red[200],
-                              fontSize: 27,
-                              fontFamily: 'Nunito',
-                            ),
-                          ),
+              
                           
                           Text(
                             'VitaminC',

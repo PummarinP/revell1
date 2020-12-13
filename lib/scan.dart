@@ -2,7 +2,6 @@ import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'Noti.dart';
 import 'Home.dart';
-import 'Rank.dart';
 import 'profile.dart';
 
 class Scan extends StatefulWidget {
@@ -12,7 +11,7 @@ class Scan extends StatefulWidget {
 }
 
 class _ScanState extends State<Scan> {
-  String qrCodeResult = "Not Yet Scanned";
+  String qrCodeResult = "Please Scan";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,11 +21,11 @@ class _ScanState extends State<Scan> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Text(
-              "Revell",
-              style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
-            ),
+            Container(
+            width: 100,
+            height: 40,
+            child: Image.asset('assets/images/Untitled_Artwork.png'),
+          ),
             Text(
               qrCodeResult,
               style: TextStyle(
