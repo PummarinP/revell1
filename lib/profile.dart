@@ -187,70 +187,7 @@ class _ProfileState extends State<Profile> {
                   SizedBox(
                     height: 30,
                   ),
-                  Container(
-                    height: height * 0.5,
-                    width: width,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: Colors.white,
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 15),
-                      child: Column(
-                        children: [
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Text(
-                            'My Revieww',
-                            style: TextStyle(
-                              color: Colors.red[200],
-                              fontSize: 27,
-                              fontFamily: 'Nunito',
-                            ),
-                          ),
-                          Divider(
-                            thickness: 2.5,
-                          ),
-              
-                          
-                          Text(
-                            'VitaminC',
-                            style: TextStyle(
-                              color: Colors.red[200],
-                              fontSize: 27,
-                              fontFamily: 'Nunito',
-                            ),
-                          ),
-                          
-                          Text(
-                            'IPhone12',
-                            style: TextStyle(
-                              color: Colors.red[200],
-                              fontSize: 27,
-                              fontFamily: 'Nunito',
-                            ),
-                          ),
-                          Text(
-                            'Yamaha',
-                            style: TextStyle(
-                              color: Colors.red[200],
-                              fontSize: 27,
-                              fontFamily: 'Nunito',
-                            ),
-                          ),
-                          Text(
-                            'Lightstick',
-                            style: TextStyle(
-                              color: Colors.red[200],
-                              fontSize: 27,
-                              fontFamily: 'Nunito',
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  )
+                  
                 ],
               ),
             ),
