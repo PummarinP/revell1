@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:revell/models/settings.model.dart';
 import 'home.dart';
 import 'logout.dart';
 import 'noti.dart';
@@ -10,7 +11,7 @@ import 'login.dart';
 import 'profile.dart';
 import 'category_list_view.dart';
 // import 'app_theme.dart';
-
+import 'package:revell/scanner/scanner.dart';
 
 
 
@@ -26,10 +27,12 @@ class MyApp extends StatelessWidget {
     Rank.tag: (context) => Rank(),
     Scan.tag: (context) => Scan(),
     CategoryListView.tag: (context) => CategoryListView(),
-   
+    ScannerPage.tag: (context) => ScannerPage(widget.settings),
   };
+  
 
   @override
+  
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,

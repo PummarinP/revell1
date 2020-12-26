@@ -95,5 +95,5 @@ class _ScanState extends State<Scan> {
 }
   
 
-  //its quite simple as that you can use try and catch staatements too for platform exception
+ 
 
