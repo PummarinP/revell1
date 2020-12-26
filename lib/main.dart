@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
     Rank.tag: (context) => Rank(),
     Scan.tag: (context) => Scan(),
     CategoryListView.tag: (context) => CategoryListView(),
-    ScannerPage.tag: (context) => ScannerPage(widget.settings),
+    ScannerPage.tag: (context) => ScannerPage(),
   };
   
 

@@ -4,6 +4,7 @@ import 'Home.dart';
 import 'Noti.dart';
 import 'Scan.dart';
 import 'Rank.dart';
+import 'package:revell/scanner/scanner.dart';
 
 class Profile extends StatefulWidget {
   static String tag = 'Profile';
@@ -205,7 +206,7 @@ class _ProfileState extends State<Profile> {
             IconButton(
                 icon: Icon(Icons.filter_center_focus),
                 onPressed: () {
-                  Navigator.of(context).pushNamed(Scan.tag);
+                  Navigator.of(context).pushNamed(ScannerPage.tag);
                 }),
             Spacer(),
             IconButton(
